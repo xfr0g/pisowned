@@ -2,6 +2,7 @@
 
 # pisowned
 pisowned: PISO WIFI ATTACKER
+Note: I removed the SSH Brute-force attack v2 since it has many errors.
 
 # 6 Options
 * Port scan
