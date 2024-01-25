@@ -3,11 +3,10 @@
 # pisowned
 pisowned: PISO WIFI ATTACKER
 
-# 7 Options
+# 6 Options
 * Port scan
 * HTTP Brute-force attack
 * SSH Brute-force attack
-* SSH  Brute-force attack v2
 * wifite
 * Check ping
 * Exit
